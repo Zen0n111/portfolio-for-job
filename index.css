@@ -647,3 +647,44 @@ body {
   border-top: 1px solid #222;
 }
 
+.toast {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #161b22;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ffffff80;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.toast-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.toast-icon {
+  margin-bottom: 0.3rem;
+}
+
+
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toast.hidden {
+  opacity: 0;
+}
