@@ -586,7 +586,7 @@ body {
 /* Right Side - Contact Form */
 .collab-form {
   flex: 1;
-  min-width: 320px;
+  min-width: 250px;
 }
 
 .collab-form h2 {
