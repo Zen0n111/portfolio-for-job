@@ -7,7 +7,7 @@
     const formData = new FormData(form);
 
     try {
-      await fetch("https://formsubmit.co/YOUR_EMAIL@gmail.com", {
+      await fetch("https://formsubmit.co/layosbenedict3@gmail.com", {
         method: "POST",
         body: formData
       });
